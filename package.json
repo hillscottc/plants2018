@@ -1,0 +1,20 @@
+{
+  "name": "docker-postgres-node",
+  "version": "1.0.0",
+  "description": "docker-ized postgres node fullstack",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "server": "docker-compose up",
+    "client": "cd client && npm start"
+  },
+  "author": "Scott Hill",
+  "license": "ISC"
+}
