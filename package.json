@@ -24,8 +24,11 @@
     "pg": "^7.4.3"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.3",
     "babel-register": "^6.26.0",
-    "concurrently": "^3.5.1"
+    "concurrently": "^3.5.1",
+    "eslint": "^4.19.1",
+    "standard": "^11.0.1"
   },
   "babel": {
     "presets": [
@@ -42,5 +45,8 @@
       "transform-object-rest-spread",
       "transform-class-properties"
     ]
+  },
+  "standard": {
+    "parser": "babel-eslint"
   }
 }
