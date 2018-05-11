@@ -9,7 +9,8 @@
     "start": "npm run dev",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "server": "docker-compose up",
-    "client": "cd client && npm start"
+    "client": "cd client && npm start",
+    "lint": "standard \"client/src/**/*.js\" \"server/**/*.js\""
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
