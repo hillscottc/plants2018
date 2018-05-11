@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "author": "Scott Hill",
   "license": "ISC",
-  "description": "docker-ized postgres node fullstack",
-  "main": "server.js",
+  "description": "A full stack Plants app.",
+  "repository": "github:hillscottc/plants2018",
+  "main": "server/index.js",
   "scripts": {
     "start": "npm run dev",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "server": "docker-compose up",
     "client": "cd client && npm start",
-    "lint": "standard \"client/src/**/*.js\" \"server/**/*.js\""
+    "lint": "standard \"client/src/**/*.js\" \"server/**/*.js\"",
+    "test": "jest server/test/"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
@@ -29,7 +31,10 @@
     "babel-register": "^6.26.0",
     "concurrently": "^3.5.1",
     "eslint": "^4.19.1",
-    "standard": "^11.0.1"
+    "jest": "^22.4.3",
+    "should": "^13.2.1",
+    "standard": "^11.0.1",
+    "supertest": "^3.0.0"
   },
   "babel": {
     "presets": [
