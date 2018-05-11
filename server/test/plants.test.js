@@ -79,7 +79,5 @@ describe('Plants API', function () { // eslint-disable-line no-undef
           done()
         })
     })
-
   })
-
 })
