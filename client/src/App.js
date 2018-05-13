@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PlantsView from './plants/plants-view'
 import logo from './logo.svg'
 import './App.css'
 
@@ -28,6 +29,7 @@ class App extends Component {
           <h1 className='App-title'>Welcome to React</h1>
         </header>
         <p className='App-intro'>{this.state.response}</p>
+        <PlantsView />
       </div>
     )
   }
