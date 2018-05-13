@@ -1,7 +1,6 @@
 import should from 'should' // eslint-disable-line no-unused-vars
 import { Plant } from '../orm/plant/schema'
 
-// Skipping this test for now. Connection problem
 describe('Plants Schema', function () { // eslint-disable-line no-undef
   it('get plant by id', function (done) { // eslint-disable-line no-undef
     const id = 7
