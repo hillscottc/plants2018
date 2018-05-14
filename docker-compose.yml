@@ -4,8 +4,8 @@ services:
   #   image: redis
   db:
     image: postgres
-    volumes: # Persist the data!
-      - "/tmp/pgdata:/var/lib/postgresql/data"
+    # volumes: # Persist the data!
+    #   - "/tmp/pgdata:/var/lib/postgresql/data"
     environment:
       POSTGRES_PASSWORD: password
       POSTGRES_USER: plants_user
